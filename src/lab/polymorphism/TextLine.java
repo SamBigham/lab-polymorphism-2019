@@ -58,4 +58,12 @@ public class TextLine implements TextBlock {
     return this.line.length();
   } // width()
 
+  public String textline(){
+    return this.line;
+  }
+
+  public String type(){
+    return "TextLine";
+  }
+
 } // class TextLine

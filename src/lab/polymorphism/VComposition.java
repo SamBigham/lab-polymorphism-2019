@@ -87,4 +87,11 @@ public class VComposition implements TextBlock {
     return Math.max(this.top.width(), this.bottom.width());
   } // width()
 
+  public String textline(){
+    return this.top.textline();
+  }
+  public String type(){
+    return "VComp";
+  }
+
 } // class VComposition

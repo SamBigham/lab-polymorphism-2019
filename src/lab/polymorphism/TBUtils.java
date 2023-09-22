@@ -14,12 +14,14 @@ public class TBUtils {
   // +--------------+
 
   /**
-   * A really big sequence of dashes. This sequence may grow as the program operates.
+   * A really big sequence of dashes. This sequence may grow as the program
+   * operates.
    */
   static String lotsOfDashes = "--";
 
   /**
-   * A really big sequence of spaces. This sequence may grow as the program operates.
+   * A really big sequence of spaces. This sequence may grow as the program
+   * operates.
    */
   static String lotsOfSpaces = "  ";
 
@@ -68,5 +70,27 @@ public class TBUtils {
     // Extract an appropriate length substring
     return lotsOfSpaces.substring(0, len);
   } // spaces(int)
+
+  public boolean equal(TextBlock t1, TextBlock t2) {
+
+    if (t1.textline().equals(t2.textline())) {
+      return true;
+    } else {
+      return false;
+    }
+
+  }
+
+  public boolean eqv(TextBlock t1, TextBlock t2) {
+    if (t1.type().equals(t2.type())) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  public boolean eq(TextBlock t1, TextBlock t2) {
+    return (t1 == t2);
+  }
 
 } // class TBUtils

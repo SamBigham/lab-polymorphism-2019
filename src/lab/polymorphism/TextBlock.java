@@ -11,12 +11,18 @@ public interface TextBlock {
   // | Methods |
   // +---------+
 
+  //public int textln();
   /**
    * Get one row from the block.
    * 
    * @pre i < this.height()
    * @exception Exception if the row number is invalid.
    */
+
+  public String textline();
+
+  public String type();
+
   public String row(int i) throws Exception;
 
   /**
